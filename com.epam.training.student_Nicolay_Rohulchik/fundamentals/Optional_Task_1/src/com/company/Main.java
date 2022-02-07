@@ -7,14 +7,14 @@ public class Main {
             public static void main(String[] args) {
                 Scanner scan = new Scanner(System.in);
                 String line = scan.nextLine();
-                String longWord = "", shortWord = line;
+                String longNmb = "", shortNmb = line;
                 for (String s : line.split(" ")) {
-                    if (s.length() > longWord.length()) longWord = s;
-                    if (s.length() < shortWord.length()) shortWord = s;
+                    if (s.length() > longNmb.length()) longNmb = s;
+                    if (s.length() < shortNmb.length()) shortNmb = s;
                 }
-                System.out.println("Самое длинное слово: '" + longWord + "'");
-                System.out.println("Длина: " + longWord.length());
-                System.out.println("Самое короткое слово: '" + shortWord + "'");
-                System.out.println("Длина: " + shortWord.length());
+                System.out.println("Самое длинное число: '" + longNmb + "'");
+                System.out.println("Длина: " + longNmb.length());
+                System.out.println("Самое короткое число: '" + shortNmb + "'");
+                System.out.println("Длина: " + shortNmb.length());
     }
 }
